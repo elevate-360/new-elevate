@@ -111,10 +111,9 @@ export const JWTProvider = ({ children }) => {
       users = [
         ...JSON.parse(localUsers),
         {
-          id,
           email,
           password,
-          name: `${firstName} ${lastName}`
+          name: `${firstname} ${lastname}`
         }
       ];
     }
